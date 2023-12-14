@@ -175,6 +175,36 @@
         font-weight: bold;
         color: #fff68f;
       }
+
+      /* Styles for gallery */
+
+      /* 
+  Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template
+  Author: www.w3schools.com
+  Original Name: CSS Grid Template
+  Original Description: Demonstrates the use of the grid-template property
+  Original Date retrieved: Dec. 2, 2023
+*/
+
+      /* Copied code starts */
+
+      .gallery {
+        /* Display grid with two columns */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        /* Set gap between grid items */
+        padding: 70px;
+        /* Add padding around the grid */
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        /* Maintain image aspect ratio */
+      }
+
+      /* Copied code ends */
     </style>
   </head>
   <body>
@@ -186,6 +216,7 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <h1>Photos</h1>
 
     <div class="content-block">
       <div class="heading-block">Contact</div>
